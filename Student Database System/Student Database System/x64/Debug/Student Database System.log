@@ -1,2 +1,2 @@
 ﻿  Source.cpp
-  Student Database System.vcxproj -> E:\FortyTwoLab\Student Database\Student Database System\x64\Debug\Student Database System.exe
+E:\FortyTwoLab\Student Database\Student Database System\Student Database System\Source.cpp(21,2): error C3861: 'deleteData': identifier not found

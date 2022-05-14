@@ -6,7 +6,7 @@ using namespace std;
 
 static int createDB(const char* s);
 static int createTable(const char* s);
-static int deleteData(const char* s);
+//static int deleteData(const char* s);
 static int insertData(const char* s);
 static int updateData(const char* s);
 static int selectData(const char* s);
@@ -75,9 +75,9 @@ static int insertData(const char* s)
 	sqlite3* DB;
 	char* messageError;
 
-	string sql("INSERT INTO GRADES (NAME, GRADE) VALUES('Alice','A');"
-		"INSERT INTO GRADES (NAME, GRADE) VALUES('Bob', 'B');"
-		"INSERT INTO GRADES (NAME, GRADE) VALUES('Fred', 'C');");
+	string sql("INSERT INTO GRADES (NAME, GRADE) VALUES('Pratik','A');"
+		"INSERT INTO GRADES (NAME, GRADE) VALUES('Vikas', 'B');"
+		"INSERT INTO GRADES (NAME, GRADE) VALUES('Pradeep', 'C');");
 
 	int exit = sqlite3_open(s, &DB);
 	
