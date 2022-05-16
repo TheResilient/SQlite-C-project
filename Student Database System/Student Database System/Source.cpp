@@ -4,13 +4,13 @@
 
 using namespace std;
 
-static int createDB(const char* s);
-static int createTable(const char* s);
+int createDB(const char* s);
+int createTable(const char* s);
 //static int deleteData(const char* s);
-static int insertData(const char* s);
-static int updateData(const char* s);
-static int selectData(const char* s);
-static int callback(void* NotUsed, int argc, char** argv, char** azColName);
+int insertData(const char* s);
+int updateData(const char* s);
+int selectData(const char* s);
+int callback(void* NotUsed, int argc, char** argv, char** azColName);
 
 int main()
 {
@@ -26,7 +26,7 @@ int main()
 	return 0;
 }
 
-static int createDB(const char* s)
+int createDB(const char* s)
 {
 	sqlite3* DB;
 
@@ -38,7 +38,7 @@ static int createDB(const char* s)
 	return 0;
 }
 
-static int createTable(const char* s)
+int createTable(const char* s)
 {
 	sqlite3* DB;
 	char* messageError;
@@ -70,7 +70,7 @@ static int createTable(const char* s)
 	return 0;
 }
 
-static int insertData(const char* s)
+int insertData(const char* s)
 {
 	sqlite3* DB;
 	char* messageError;
@@ -92,7 +92,7 @@ static int insertData(const char* s)
 	return 0;
 }
 
-static int updateData(const char* s)
+int updateData(const char* s)
 {
 	sqlite3* DB;
 	char* messageError;
@@ -112,7 +112,7 @@ static int updateData(const char* s)
 	return 0;
 }
 
-static int deleteData(const char* s)
+int deleteData(const char* s)
 {
 	sqlite3* DB;
 	char* messageError;
@@ -132,7 +132,7 @@ static int deleteData(const char* s)
 	return 0;
 }
 
-static int selectData(const char* s)
+int selectData(const char* s)
 {
 	sqlite3* DB;
 	char* messageError;
@@ -154,7 +154,7 @@ static int selectData(const char* s)
 }
 
 
-static int callback(void* NotUsed, int argc, char** argv, char** azColName)
+int callback(void* NotUsed, int argc, char** argv, char** azColName)
 {
 	for (int i = 0; i < argc; i++) {
 		// column name and value

@@ -1,2 +1,2 @@
-﻿  Source.cpp
-E:\FortyTwoLab\Student Database\Student Database System\Student Database System\Source.cpp(21,2): error C3861: 'deleteData': identifier not found
+﻿  sqlite3.c
+c1 : fatal error C1083: Cannot open source file: '..\..\..\sqlite-amalgamation-3380300\sqlite-amalgamation-3380300\sqlite3.c': No such file or directory
